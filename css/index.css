@@ -1,0 +1,103 @@
+
+.main-content{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.slider{
+    width: 500px;
+    height: 600px;
+    margin:0;
+    overflow: hidden;
+    box-shadow: 5px 0px 5px #397D54;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 20s infinite alternate;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.texto{
+    text-align: center;
+    margin-top: 100px ;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 22px;
+}
+.presentacion{
+    
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.presentacion > div{
+    background-color:#397D54;
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    margin-left: 50px;
+}
+.presentacion > div:hover{
+    background-color: #73C088;
+
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+    box-shadow: 4px 4px 3px black;
+}
+.caja a{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.foto > img{
+    width: 130px;
+    height: 100px;
+    margin: 3px;
+    border-radius: 3%;
+}
+
+.producto{
+    color: white;
+    margin: 3px;
+}
+.descripcion{
+    color: white;
+    margin: 3px;
+    text-align: center;
+}
+
+
+@keyframes slider{
+    0%{ margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{ margin-left: -140%;}
+    45%{margin-left: -140%;}
+
+    50%{ margin-left: -250%;}
+    70%{margin-left: -250%;}
+
+    75%{ margin-left: -380%;}
+    100%{margin-left: -380%;}
+}
