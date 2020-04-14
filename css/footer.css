@@ -6,14 +6,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 35px;
+    height: 45px;
     width: 100%;
     background-color:#397D54 ;
 }
 
 .footer > div{
     color: white;
-    margin: 10px;
+    margin: 15px;
     
 
 }

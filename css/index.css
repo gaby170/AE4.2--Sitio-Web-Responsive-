@@ -2,7 +2,7 @@
 .main-content{
     width: 100%;
     height: 100%;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -27,6 +27,7 @@
 .centro{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: stretch;
 }
 .texto{
@@ -35,11 +36,12 @@
     margin-bottom: 100px;
     margin-left: 200px;
     margin-right: 200px;
-    font-size: 22px;
+    font-size: 25px;
+    color: #539D73 ;
 }
 .presentacion{
     
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
