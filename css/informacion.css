@@ -1,0 +1,38 @@
+.contenedor{
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: burlywood;
+    box-shadow: 0px 10px 10px 9px gray;
+}
+.principal img{
+    width: 100%;
+}
+.principal{
+    height: 400px;
+    overflow: hidden;
+}
+.titulo{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+.texto{
+    text-align: center;
+    margin: 10px;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.imagenes div{
+    margin: 30px;
+}
+.foto{
+    background: url(../images/flores.jpg) center/cover ;
+    width: 350px;
+    height: 204px;
+}
