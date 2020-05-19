@@ -1,12 +1,16 @@
+*{
+    margin: 0;
+}
 .contenedor{
     height: 100%;
     margin-left: 15%;
     margin-right: 15%;
-    background-color: burlywood;
+    background-color: #374d65;
     box-shadow: 0px 10px 10px 9px gray;
 }
 .principal img{
     width: 100%;
+    
 }
 .principal{
     height: 400px;
@@ -27,12 +31,57 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 30px;
 }
-.imagenes div{
+/*.imagenes div{
     margin: 30px;
-}
-.foto{
-    background: url(../images/flores.jpg) center/cover ;
+}*/
+.rotan{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    cursor: pointer;
+  }
+  
+  .rotan:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .imagen{
     width: 350px;
     height: 204px;
-}
+    perspective: 600px;
+    border: 1px solid #00000050;
+    margin-right: 30px;
+  }
+  
+  .cara2{
+    background: url(../images/flores2.jpg) no-repeat center center/cover;
+    
+  }
+  
+  /*.imagen div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+  }*/
+  
+  .cara1 {
+    background: url(../images/floreees.jpeg) no-repeat center center/cover;
+    transform: rotateY(180deg);
+  }
+
+  .cara1, .cara2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+   
