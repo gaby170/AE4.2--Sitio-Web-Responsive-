@@ -1,8 +1,11 @@
 
+.main-content{
+    background: linear-gradient( #397D54, #47A06B, #65CB8E, white);
+}
 .contenedor{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: gray;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:#E6F7EC;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +16,6 @@
     font-size: 40px;
 }
 .productos{
-    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -22,16 +24,21 @@
 }
 
 .foto{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 10px;
+    z-index: 1;
 
 }
+.texto > ul > li{
+    font-size: 20px;
+    text-align: right;
+}
 .texto{
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 880px;
     margin: 10px;
-    background-color: green;
+    background-color: #73C088;
     padding: 10px;
 }
 ul{
@@ -41,19 +48,37 @@ ul{
 }
 .caja{
     display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+    height: calc(200px + 2rem);
+    width: calc(400px + 3rem);
+    cursor: pointer;
 }
-
+.caja:hover > .foto {
+    filter: grayscale(1);
+    /*left: 1rem;*/
+    transform: translateX(calc(-150px - .8rem));
+  }
+.caja > div{
+    display: inline-block;
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    padding: 1rem;
+    transition: all 1s ease;
+}
 
 
 .foto.arreglos {
-    background: url(../images/masetitas.jpeg)  no-repeat center center/cover;
+    background: url(../images/arreglosflorales.jpg)  no-repeat center center/cover;
 }
 .foto.flores {
-    background: url(../images/masetitas.jpeg)  no-repeat center center/cover;
+    background: url(../images/flores.jpg)  no-repeat center center/cover;
 }
 .foto.plantas {
-    background: url(../images/masetitas.jpeg)  no-repeat center center/cover;
+    background: url(../images/plantas.jpg)  no-repeat center center/cover;
 }
 .foto.otros {
-    background: url(../images/masetitas.jpeg)  no-repeat center center/cover;
+    background: url(../images/otros.jpg)  no-repeat center center/cover;
 }
