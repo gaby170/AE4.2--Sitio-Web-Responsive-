@@ -59,7 +59,7 @@
   }
   
   .cara2{
-    background: url(../images/flores2.jpg) no-repeat center center/cover;
+    background: url(../images/rota1.jpg) no-repeat center center/cover;
     
   }
   
@@ -73,7 +73,7 @@
   }*/
   
   .cara1 {
-    background: url(../images/floreees.jpeg) no-repeat center center/cover;
+    background: url(../images/rota2.jpg) no-repeat center center/cover;
     transform: rotateY(180deg);
   }
 
