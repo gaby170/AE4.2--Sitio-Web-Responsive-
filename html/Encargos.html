@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Cabecera.css">
+    <link rel="stylesheet" href="../css/informacion.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Laurisilva</title>
+</head>
+<body>
+    <div id="header">
+        <div class="cabecera">
+            <div class="nombre">
+                <h2>Laurisilva</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">MENU</a>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../html/Informacion.html">Informacion</a></li>
+                            <li><a href="../html/Productos.html">Productos</a></li>
+                            <li><a href="../html/Encargos.html">Encargos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="contenedor">
+            <div class="gradiente"></div>
+            <div class="contenido">
+                <div class="encargo">
+                        <form action="http://www.apuntes.es/maneja_formulario.php" method="post">
+                             <div class="formulario">
+                                 <h1>Encargo</h1>
+                                    <fieldset>
+                                        <div class="rellenar">
+                                            <div class="n">
+                                                <label for="nombre">Nombre y Apellidos:</label> 
+                                                <input class="caja" type="text" name="nombre" value="" placeholder="Introduce tu nombre..." />
+                                            </div>
+                                            <div class="c">
+                                                <label for="correo">Correo:</label>
+                                                <input class="caja" type="text" name="correo" value="" placeholder="Introduce tu correo..." />
+                                            </div>
+                                            <div>Producto:
+                                                <select class="elegir" name="entrada">
+                                                    <option>Row</option>
+                                                    <option selected>Sunblast</option>
+                                                    <option>I Love Music</option>
+                                                    <option>Dia 1</option>
+                                                    <option>Ritmos del Mundo</option>
+                                                </select>
+                                                <select name="cantidad">
+                                                    <option selected>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="botones">
+                                            <input type="reset" name="limpiar" value="Limpiar" /> 
+                                            <input type="submit" name="enciar" value="Enviar" />
+                                        </div>
+                                    </fieldset>
+                             </div> 
+                        </form>
+                </div>
+                <div class="duda">
+                    <h3>¿Tienes dudas?</h3>
+                    <div class="texto">Contacta con nosotros</div>
+                    <div class="telefono">6323943563</div>
+                </div>
+                <div class="redes"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="direccion">Santa Catalina - Hermigua</div>
+        <div class="numero">6323943563</div>
+        <div class="correo">floristeriaLaurisilva@gmail.com</div>
+    </div>
+    
+</body>
+</html>

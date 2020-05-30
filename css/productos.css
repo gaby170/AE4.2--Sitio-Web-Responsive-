@@ -50,15 +50,20 @@ ul{
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 1rem;
     height: calc(200px + 2rem);
-    width: calc(400px + 3rem);
+    width: calc(410px + 1rem);
     cursor: pointer;
+    margin: 0 1rem;
+    margin-bottom: 10px;
+    border: double black 5px;
 }
 .caja:hover > .foto {
     filter: grayscale(1);
     /*left: 1rem;*/
-    transform: translateX(calc(-150px - .8rem));
+    transform: translateX(calc(-100px - .8rem));
+  }
+  .caja:hover > .texto {
+    transform: translateX(calc(100px - .8rem));
   }
 .caja > div{
     display: inline-block;
