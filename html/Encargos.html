@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/08c7f10dc9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/Cabecera.css">
-    <link rel="stylesheet" href="../css/informacion.css">
+    <link rel="stylesheet" href="../css/encargos.css">
     <link rel="stylesheet" href="../css/footer.css">
     <title>Laurisilva</title>
 </head>
@@ -31,6 +32,17 @@
     <div class="main-content">
         <div class="contenedor">
             <div class="gradiente"></div>
+            <div class="duda">
+                <h3>¿Tienes dudas?</h3>
+                <div class="texto">Contacta con nosotros</div>
+                <div class="telefono">6323943563</div>
+                <div class="redes">
+                    <div><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></div>
+                    <div><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></div>
+                    <div><a href="https://twitter.com/?logout=1584899621393"><i class="fab fa-twitter-square"></i></a></div>
+                    <div><a href="https://www.youtube.com/farraworld"><i class="fab fa-youtube-square"></i></a></div>
+                </div>
+            </div>
             <div class="contenido">
                 <div class="encargo">
                         <form action="http://www.apuntes.es/maneja_formulario.php" method="post">
@@ -39,29 +51,114 @@
                                     <fieldset>
                                         <div class="rellenar">
                                             <div class="n">
-                                                <label for="nombre">Nombre y Apellidos:</label> 
+                                                <label for="nombre">Nombre:</label> 
                                                 <input class="caja" type="text" name="nombre" value="" placeholder="Introduce tu nombre..." />
                                             </div>
                                             <div class="c">
-                                                <label for="correo">Correo:</label>
+                                                <label for="correo">Correo electronico:</label>
                                                 <input class="caja" type="text" name="correo" value="" placeholder="Introduce tu correo..." />
                                             </div>
-                                            <div>Producto:
-                                                <select class="elegir" name="entrada">
-                                                    <option>Row</option>
-                                                    <option selected>Sunblast</option>
-                                                    <option>I Love Music</option>
-                                                    <option>Dia 1</option>
-                                                    <option>Ritmos del Mundo</option>
-                                                </select>
-                                                <select name="cantidad">
-                                                    <option selected>0</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
+                                            <div class="opciones">
+                                                <input type="checkbox" id="radio1" name="option1" value="radio1">
+                                                <label for="radio1">Arreglos Florales</label>
+                                                <br/>
+                                                <input type="checkbox" id="radio2" name="option2" value="radio2">
+                                                <label for="radio2">Flores o Plantas</label>
+                                                <br/>
+                                                <input type="checkbox" id="radio3" name="option3" value="radio3">
+                                                <label for="radio3">Otros </label>
+                                            </div>
+                                            <div id="div1">
+                                                <h3>Arreglos Florales</h3>
+                                                <div>Evanto:
+                                                    <select class="elegir" name="evento">
+                                                        <option>Funeral</option>
+                                                        <option selected>Bodas</option>
+                                                        <option>Felicitaciones</option>
+                                                        <option>Comuniones</option>
+                                                        <option>Nacimientos</option>
+                                                    </select>
+                                                </div>
+                                                <div class="d">
+                                                    <label for="apellido">Dirección:</label>
+                                                    <input class="caja" type="direccion" name="apellido" value="" placeholder="Introduce tu dirección..." />
+                                                </div>
+                                                <div class="d">
+                                                    <label for="apellido">Hora de la entrega:</label>
+                                                    <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
+                                                </div>
+                                                <div class="m">
+                                                    <label for="mensajes">Otros datos:</label>
+                                                    <textarea class="elegir" name="mensaje" id="radio5" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
+                                                </div>
+                                            </div>
+                                            <div id="div2">
+                                                <h3>Flores o Plnatas</h3>
+                                                <div>Flor:
+                                                    <select class="elegir" name="evento">
+                                                        <option value="1" label="Orquideas">
+                                                        <option value="2" label="Gerberas">
+                                                        <option value="3" label="Margaritas">
+                                                        <option value="4" label="Claveles">
+                                                        <option value="5" label="Lirios">
+                                                        <option value="6" label="Rosas">
+                                                        <option value="7" label="Anthurium">
+                                                        <option value="8" label="Lisianthus">
+                                                    </select>
+                                                    <select name="cantidad">
+                                                        <option selected>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div>Planta:
+                                                    <select class="elegir" name="evento">
+                                                        <option value="1" label="Orquideas">
+                                                        <option value="3" label="Margaritas">
+                                                        <option value="4" label="Claveles">
+                                                        <option value="5" label="Lirios">
+                                                        <option value="6" label="Rosas">
+                                                    </select>
+                                                    <select name="cantidad">
+                                                        <option selected>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="m">
+                                                    <label for="mensajes">Frase o dedicatoria</label>
+                                                    <textarea class="elegir" name="mensaje" id="radio5" cols="30" rows="1" placeholder="Introduce un mensaje..." ></textarea>
+                                                </div>
+                                                <div> Anonimo :
+                                                    <input type="radio" name="transporte" value="1">Si
+                                                    <input type="radio" name="transporte" value="2">No
+                                                </div>
+                                                <div class="d">
+                                                    <label for="apellido">Dirección:</label>
+                                                    <input class="caja" type="direccion" name="apellido" value="" placeholder="Introduce tu dirección..." />
+                                                </div>
+                                                <div class="d">
+                                                    <label for="apellido">Hora de la entrega:</label>
+                                                    <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
+                                                </div>
+                                                <div class="m">
+                                                    <label for="mensajes">Otros datos:</label>
+                                                    <textarea class="elegir" name="mensaje" id="radio5" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
+                                                </div>
+                                            </div>
+                                            <div id="div3">
+                                                <h3>Otros</h3>
+                                                <div class="m">
+                                                    <label for="mensajes">Describa el producto:</label>
+                                                    <textarea class="elegir" name="mensaje" id="radio5" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
+                                                    <p>¿O si prefiere contacte con nosotros?</p>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="botones">
@@ -72,11 +169,7 @@
                              </div> 
                         </form>
                 </div>
-                <div class="duda">
-                    <h3>¿Tienes dudas?</h3>
-                    <div class="texto">Contacta con nosotros</div>
-                    <div class="telefono">6323943563</div>
-                </div>
+                
                 <div class="redes"></div>
             </div>
         </div>
