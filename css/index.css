@@ -7,8 +7,8 @@
     flex-wrap: wrap;
 }
 .slider{
-    width: 500px;
-    height: 560px;
+    width: 31.25rem;
+    height: 35rem;
     margin:0;
     overflow: hidden;
     box-shadow: 5px 0px 5px #397D54;
@@ -32,10 +32,10 @@
 }
 .texto{
     text-align: center;
-    margin-top: 100px ;
-    margin-bottom: 55px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-top: 6.25rem ;
+    margin-bottom: 3.4375rem;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
     font-size: 50px;
     color: #04662B;
     font-family: 'Marck Script', cursive;
@@ -44,8 +44,8 @@
     
 }
 .texto > p {
-    margin-top: 10px;
-    font-size: 25px;
+    margin-top: 0.625rem;
+    font-size: 1.5625rem;
     color: #539D73 ;
 }
 .presentacion{
@@ -57,10 +57,10 @@
 }
 .presentacion > div{
     background-color:#397D54;
-    width: 180px;
-    height: 180px;
-    margin: 20px;
-    margin-left: 50px;
+    width: 11.25rem;
+    height: 11.25rem;
+    margin: 1.25rem;
+    margin-left: 3.125rem;
 }
 .presentacion > div:hover{
     background-color: #73C088;
@@ -82,8 +82,8 @@
 
 
 .foto > img{
-    width: 130px;
-    height: 100px;
+    width: 8.125rem;
+    height: 6.25rem;
     margin: 3px;
     border-radius: 3%;
 }
