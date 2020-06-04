@@ -13,12 +13,12 @@
     
 }
 .principal{
-    height: 400px;
+    height: 25rem;
     overflow: hidden;
 }
 .titulo{
     text-align: center;
-    margin: 40px;
+    margin: 2.5rem;
     font-size: 60px;
     color: white;
     font-family: 'Marck Script', cursive;
@@ -28,7 +28,7 @@
     margin: 5%;
 }
 .texto > p {
-  padding: 10px;
+  padding: 0.625rem;
   font-family: 'Trocchi', serif;
   color: wheat;
 }
@@ -38,11 +38,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 1.875rem;
 }
-/*.imagenes div{
-    margin: 30px;
-}*/
 .rotan{
     width: 100%;
     height: 100%;
@@ -58,10 +55,10 @@
   }
   
   .imagen{
-    width: 350px;
-    height: 204px;
-    perspective: 600px;
-    margin-right: 30px;
+    width: 21.875rem;
+    height: 12.75rem;
+    perspective: 37.5rem;
+    margin-right: 1.875rem;
   }
   
   .cara2{
@@ -69,14 +66,7 @@
     
   }
   
-  /*.imagen div{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 2.5em;
-  }*/
+  
   
   .cara1 {
     background: url(../images/rota2.jpg) no-repeat center center/cover;
