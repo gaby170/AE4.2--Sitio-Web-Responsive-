@@ -1,14 +1,17 @@
 
 .main-content{
-    background-color: #a4a8a6;
-    padding: 2%;
+    background: #C2F9D5;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 8% ;
+    padding-left: 8%;
 }
 .contenedor{
     background-color: #4abe78;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    box-shadow: -10px 10px 10px gray;
+    box-shadow: -10px 10px 30px black;
     align-items: flex-start;
 }
 
@@ -25,7 +28,7 @@ fieldset{
     
 }
 .encargo{
-    width: 80%;
+    width: 70%;
 }
 .nube{
     background: rgb(127,244,173);
@@ -33,7 +36,7 @@ fieldset{
     overflow: hidden;
     padding: 0px;
     width: 230px;
-    height: 140px;
+    height: 150px;
     float: left;
     border-radius: 50px 0px 50px 0px; 
     -moz-border-radius: 35px 0px 35px 0px; 
@@ -50,9 +53,16 @@ fieldset{
 .duda > div{
     margin-top: 5px;
 }
+.duda > .texto{
+    font-family: 'Trocchi', serif;
+}
+h3{
+    font-family: 'Merienda', cursive;  
+}
 .redes{
     display: flex;
 }
+
 .redes > div{
     margin-left: 10px;
 }
@@ -96,18 +106,40 @@ i:hover{
 }
 
 h1{
+    font-size: 60px;
+    text-align: center;
     margin-left: 4%;
+    margin-top: 5%;
+    font-family: 'Marck Script', cursive;
 }
 .rellenar > div{
-    margin-top: 10px;
+    margin-top: 45px;
     margin-left: 5%;
     
+}
+.n > input{
+    margin-left: 10px;
+    width: 350px;
+    height: 25px;
+    border: 0;
+    margin-top: 10px;
+}
+.c > input{
+    margin-left: 10px;
+    width: 350px;
+    height: 25px;
+    border: 0;
+    
+    margin-top: 10px;
+}
+.s > p{
+    font-size: 25px;
 }
 .botones{
     margin: 20px;
 }
 .s>input{
-    margin-top: 3px;
+    margin-top: 10px;
 }
 
 .s > div{
@@ -117,14 +149,9 @@ h1{
     width: 100%;
     background: linear-gradient(90deg, rgba(74,190,120,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 73%, rgba(74,190,120,1) 100%);
     padding: 20px;
-
-}
-.m{
-    
 }
 #arreglosFlores > div{
     margin-top: 15px;
-    text-align: ;
 }
 #floresPlantas > div{
     margin-top: 15px;
@@ -151,10 +178,15 @@ h1{
 }
 .botones > input:hover{
     border-radius: 50%;
-    width: 90px;
-    height: 50px;
     background: #397D54;
 
 
+}
+.s > div > .m > label{
+    vertical-align: top;
+
+}
+label{
+    font-family: 'Trocchi', serif;
 }
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&family=Merienda&family=Trocchi&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08c7f10dc9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/Cabecera.css">
     <link rel="stylesheet" href="../css/encargos.css">
@@ -35,7 +36,7 @@
             <div class="encargo">
                     <form action="http://www.apuntes.es/maneja_formulario.php" method="post">
                         <div class="formulario">
-                            <h1>Encargo</h1>
+                            <h1>Encargos</h1>
                             <fieldset>
                                 <div class="rellenar">
                                     <div class="n">
@@ -58,7 +59,7 @@
                                         <label for="radio3">Otros </label>
                                         <div id="arreglosFlores">
                                                     <h3>Arreglos Florales</h3>
-                                                    <div>Evanto:
+                                                    <div>Evento:
                                                         <select class="elegir" name="evento">
                                                             <option>Funeral</option>
                                                             <option selected>Bodas</option>
@@ -68,15 +69,19 @@
                                                         </select>
                                                     </div>
                                                     <div class="d">
-                                                        <label for="apellido">Dirección:</label>
-                                                        <input class="caja" type="direccion" name="apellido" value="" placeholder="Introduce tu dirección..." />
+                                                        <label for="direccion">Dirección:</label>
+                                                        <input class="caja" type="direccion" name="direccion" value="" placeholder="Introduce dirección..." />
                                                     </div>
                                                     <div class="d">
-                                                        <label for="apellido">Hora de la entrega:</label>
+                                                        <label for="start">Fecha: </label>
+                                                        <input type="date" id="start" name="trip-start" value="2018-07-22"min="2020-01-01" max="2050-12-31">
+                                                    </div>
+                                                    <div class="h">
+                                                        <label for="time">Hora de la entrega:</label>
                                                         <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
                                                     </div>
                                                     <div class="m">
-                                                        <label for="mensajes">Otros datos:</label>
+                                                        <label for="mensaje">Otros datos:</label>
                                                         <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
                                                     </div>
                                         </div>
@@ -120,7 +125,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="m">
-                                                        <label for="mensajes">Frase o dedicatoria</label>
+                                                        <label for="mensaje">Frase o dedicatoria</label>
                                                         <textarea class="elegir" name="mensaje" id="" cols="30" rows="1" placeholder="Introduce un mensaje..." ></textarea>
                                                     </div>
                                                     <div> Anonimo :
@@ -128,24 +133,28 @@
                                                         <input type="radio" name="transporte" value="2">No
                                                     </div>
                                                     <div class="d">
-                                                        <label for="apellido">Dirección:</label>
-                                                        <input class="caja" type="direccion" name="apellido" value="" placeholder="Introduce tu dirección..." />
+                                                        <label for="direcccion">Dirección:</label>
+                                                        <input class="caja" type="direccion" name="apellido" value="" placeholder="Introduce dirección..." />
                                                     </div>
                                                     <div class="d">
-                                                        <label for="apellido">Hora de la entrega:</label>
+                                                        <label for="start">Fecha: </label>
+                                                        <input type="date" id="start" name="trip-start" value="2018-07-22"min="2020-01-01" max="2050-12-31">
+                                                    </div>
+                                                    <div class="h">
+                                                        <label for="time">Hora de la entrega:</label>
                                                         <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
                                                     </div>
                                                     <div class="m">
-                                                        <label for="mensajes">Otros datos:</label>
+                                                        <label for="mensaje">Otros datos:</label>
                                                         <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
                                                     </div>
                                         </div>
                                         <div id="otros">
                                                     <h3>Otros</h3>
                                                     <div class="m">
-                                                        <label for="mensajes">Describa el producto:</label>
-                                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
-                                                        <p>¿O si prefiere contacte con nosotros?</p>
+                                                        <label for="mensaje">Describa el producto:</label>
+                                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Descripción..." ></textarea>
+                                                        <p>O si prefiere contacte con nosotros..</p>
                                                     </div>
                                         </div>
                                     </div>
