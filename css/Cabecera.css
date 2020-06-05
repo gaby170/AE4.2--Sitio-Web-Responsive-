@@ -31,6 +31,7 @@ h2{
     margin: 0;
     list-style: none;
     background-color: #397D54;
+    z-index: 2;
 }
 li{
     width: 100%;
@@ -64,7 +65,7 @@ li{
         font-size: 20px;
     }
     .nav a {
-        padding: 0.9rem;
+        padding: 0.95rem;
         font-size: 13px;
     }
     
