@@ -60,12 +60,15 @@ li{
     top: 3.125rem;
     right: 0;
 }
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 768px) {
+    *{
+        font-size: 14px;
+    }
     h2{
         font-size: 20px;
     }
     .nav a {
-        padding: 0.95rem;
+        padding: 13px;
         font-size: 13px;
     }
     
