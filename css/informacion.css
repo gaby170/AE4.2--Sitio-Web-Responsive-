@@ -3,8 +3,8 @@
 }
 .contenedor{
     height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: #374d65;
     box-shadow: 0px 10px 10px 9px gray;
 }
@@ -38,7 +38,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 1.875rem;
+    padding: 30px;
 }
 .rotan{
     width: 100%;
@@ -55,8 +55,8 @@
   }
   
   .imagen{
-    width: 21.875rem;
-    height: 12.75rem;
+    width: 300px;
+    height: 200px;
     perspective: 37.5rem;
     margin-right: 1.875rem;
   }
@@ -78,6 +78,27 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+  }
+
+  @media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    *{
+      font-size: 14px;
+    }
+    .titulo{
+      font-size: 30px;
+    }
+    .principal{
+      height: 160px;
+    }
+    .imagenes{
+      display: flex;
+      flex-direction: column;
+  }
+   .imagenes > div{
+    margin: 2px;
+    margin-bottom: 20px;
+   }
+
   }
   
    
