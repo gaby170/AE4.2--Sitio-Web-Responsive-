@@ -6,7 +6,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 45px;
+    height: 2.8125rem;
     width: 100%;
     background-color:#397D54 ;
 }
@@ -14,7 +14,13 @@
 .footer > div{
     color: white;
     font-family: 'Merienda', cursive;
-    margin: 15px;
+    margin: 0.9375rem;
     
 
 }
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    .footer > div{
+        margin-left: 4px;
+        font-size: 9px;
+    }
+  }
