@@ -234,3 +234,23 @@ label{
     }
     
   }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    html{
+      font-size: 16px;
+    }
+    .nube{
+        font-size: 10px;
+        width: 160px;
+        height: 130px;
+        border-radius: 40px 0px 40px 0px; 
+        -moz-border-radius: 80px 0px 80px 0px; 
+        -webkit-border-radius: 60px 0px 60px 0px; 
+    }
+    .redes > div{
+        margin-left: 5px;
+    }
+    i{
+        font-size: 20px;
+    }
+    
+  }

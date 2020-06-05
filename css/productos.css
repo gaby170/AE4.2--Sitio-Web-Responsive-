@@ -140,3 +140,13 @@ ul{
     }
     
   }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    html{
+      font-size: 15px;
+    }
+    .tipo{
+        margin-top: 13%;
+    }
+    
+    
+  }
