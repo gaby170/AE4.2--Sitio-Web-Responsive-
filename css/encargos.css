@@ -25,7 +25,7 @@ fieldset{
     height: 1.25rem;
     background:  linear-gradient(90deg, rgba(57,125,84,1) 0%, rgba(91,194,132,1) 10%, rgba(36,88,57,1) 25%, rgba(89,199,133,1) 40%,
     rgba(51,106,73,1) 55%, rgba(74,190,120,1) 70%, rgba(34,113,65,1) 85%, rgba(127,244,173,1) 100%);
-    
+    z-index: 1;
 }
 .encargo{
     width: 70%;
@@ -191,4 +191,46 @@ h1{
 label{
     font-family: 'Trocchi', serif;
 }
-
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    html{
+      font-size: 14px;
+    }
+    .n > input{
+        margin-left: 0px;
+        width: 260px;
+        height: 20px;
+        border: 0;
+    }
+    .c > input{
+        margin-left: 0px;
+        width: 260px;
+        height: 20px;
+        border: 0;
+    }
+    .encargo{
+        width: 40%;
+    }
+    h1{
+        font-size: 40px;
+        margin-left: 8%;
+        margin-top: 5%;
+        text-align: start;
+        font-family: 'Marck Script', cursive;
+    }
+    
+    .nube{
+        font-size: 10px;
+        width: 150px;
+        height: 100px;
+        border-radius: 40px 0px 40px 0px; 
+        -moz-border-radius: 55px 0px 35px 0px; 
+        -webkit-border-radius: 60px 0px 60px 0px; 
+    }
+    .redes > div{
+        margin-left: 5px;
+    }
+    i{
+        font-size: 17px;
+    }
+    
+  }

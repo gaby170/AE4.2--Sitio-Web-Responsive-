@@ -36,7 +36,7 @@
     margin-bottom: 3.4375rem;
     margin-left: 12.5rem;
     margin-right: 12.5rem;
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #04662B;
     font-family: 'Marck Script', cursive;
 
@@ -84,20 +84,20 @@
 .foto > img{
     width: 8.125rem;
     height: 6.25rem;
-    margin: 3px;
+    margin: 0.1875rem;
     border-radius: 3%;
 }
 
 .producto{
     color: white;
-    margin: 3px;
+    margin: 0.1875rem;
     font-family: 'Merienda', cursive;
 }
 .descripcion{
     color: white;
-    margin: 3px;
+    margin: 0.1875rem;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Trocchi', serif;
 }
 
@@ -115,3 +115,34 @@
     75%{ margin-left: -440%;}
     100%{margin-left: -440%;}
 }
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    html{
+      font-size: 14px;
+    }
+    .slider{
+        width: 500px;
+        height: 200px;
+        margin:0;
+        overflow: hidden;
+        box-shadow: 5px 0px 5px #397D54;
+    }
+    .texto{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    @keyframes slider{
+        0%{ margin-left: 0;}
+        20%{margin-left: 0;}
+    
+        25%{ margin-left: -220%;}
+        45%{margin-left: -220%;}
+    
+        50%{ margin-left: -420%;}
+        70%{margin-left: -420%;}
+    
+        75%{ margin-left: -580%;}
+        100%{margin-left: -580%;}
+    }
+  }

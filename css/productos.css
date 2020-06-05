@@ -106,7 +106,7 @@ ul{
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
-    *{
+    html{
         font-size: 14px;
     }
     .caja > div{
@@ -138,4 +138,5 @@ ul{
         margin-left: 13px;
     
     }
+    
   }
