@@ -80,7 +80,7 @@
     backface-visibility: hidden;
   }
 
-  @media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+  @media only screen and (min-device-width : 360px) and (max-device-width : 812px) {
     html{
       font-size: 14px;
     }
@@ -100,14 +100,16 @@
    }
 
   }
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
     html{
       font-size: 15px;
     }
     .texto > p {
-      font-size: 20px;
+      font-size: 23px;
     }
-    
+    .titulo{
+      font-size: 70px;
+    }
     
   }
   

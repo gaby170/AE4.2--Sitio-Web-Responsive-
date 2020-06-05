@@ -18,13 +18,13 @@
     
 
 }
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 812px) {
     .footer > div{
         margin-left: 4px;
         font-size: 9px;
     }
   }
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
     html{
       font-size: 16px;
     }

@@ -105,7 +105,7 @@ ul{
     background: url(../images/otros.jpg)  no-repeat center center/cover;
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 812px) {
     html{
         font-size: 14px;
     }
@@ -140,13 +140,20 @@ ul{
     }
     
   }
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
     html{
       font-size: 15px;
     }
     .tipo{
-        margin-top: 13%;
+        margin-top: 25%;
     }
-    
+    .caja{
+        height: calc(230px + 43px);
+        width: calc(390px + 23px);
+    }
+    .caja > div{
+        height: 220px;
+        width: 220px;
+    }
     
   }
