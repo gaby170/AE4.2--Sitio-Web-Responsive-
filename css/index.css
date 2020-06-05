@@ -116,7 +116,7 @@
     75%{ margin-left: -440%;}
     100%{margin-left: -440%;}
 }
-@media only screen and (min-device-width : 375px) and (max-device-width : 768px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 768px) {
     html{
       font-size: 14px;
     }
@@ -144,7 +144,7 @@
         100%{margin-left: -575%;}
     }
   }
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
     html{
       font-size: 15px;
     }
