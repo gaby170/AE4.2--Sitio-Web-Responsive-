@@ -3,8 +3,8 @@
     background: linear-gradient( #397D54, #47A06B, #65CB8E, white);
 }
 .contenedor{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
     background-color:#E6F7EC;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 .titulo{
     text-align: center;
     padding: 1.875rem;
-    font-size: 3.4375rem;
+    font-size: 55px;
     font-family: 'Marck Script', cursive;
 }
 .productos{
@@ -90,7 +90,6 @@ ul{
     transition: all 1.5s ease;
     font-family: 'Merienda', cursive;
     font-size: 20px;
-    color: ;
 }
 
 .foto.arreglos {
@@ -105,3 +104,38 @@ ul{
 .foto.otros {
     background: url(../images/otros.jpg)  no-repeat center center/cover;
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    *{
+        font-size: 14px;
+    }
+    .caja > div{
+        height: 100px;
+        width: 100px;
+    }
+    .texto > ul > li{
+        font-size: 15px;
+        text-align: right;
+    }
+    .caja:hover > .foto {
+        filter: grayscale(0);
+        transform: translateX(calc(-70px - 12px));
+      }
+    .caja:hover > .texto {
+        transform: translateX(calc(70px - 12px));
+      }
+      .caja{
+        height: calc(120px + 32px);
+        width: calc(410px + 16px);
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .tipo{
+        font-size: 15px;
+    }
+    .foto{
+        margin-left: 13px;
+    
+    }
+  }
