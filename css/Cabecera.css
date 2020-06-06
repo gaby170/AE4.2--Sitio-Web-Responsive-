@@ -1,16 +1,7 @@
 *{
     margin: 0;
 }
-
-h2{
-    color: white;
-    font-size: 25px;
-    font-family: 'Merienda', cursive;
-}
-.cabecera{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+header{
     height: 3.125rem;
     background-color: #397D54;
 }
@@ -18,22 +9,25 @@ h2{
     width: 90%;
     padding: 0.5rem;
 }
-.nav ul {
+h2{
+    color: white;
+    font-size: 25px;
+    font-family: 'Merienda', cursive;
+}
+.nav:hover{
+    background-color: #73C088;
+}
+nav ul {
     width: 7.1875rem;
     top: 0;
     right: 0;
     position: absolute;
-    display: flex;
     padding: 0;
-    margin: 0;
     list-style: none;
     background-color: #397D54;
     z-index: 3;
 }
-li{
-    width: 100%;
-}
-.nav a {
+nav a {
     display: block;
     padding: 1em;
     background-color: #397D54;
@@ -41,21 +35,18 @@ li{
     color: white;
     font-size: 15px;
     font-family: 'Trocchi', serif;
+    text-align: center;
 }
-.nav a:hover {
+nav a:hover {
     background-color: #73C088;
 }
-.nav ul li ul {
+nav ul li ul {
     display: none;
-}
-.nav:hover{
-    background-color: #73C088;
-
-}
-.nav ul li a:hover + ul, .nav ul li ul:hover  {
-    display: block;
-    top: 3.125rem;
+    top: 3.124rem;
     right: 0;
+}
+nav ul li a:hover + ul, nav ul li ul:hover  {
+    display: block;
 }
 @media only screen and (min-device-width : 360px) and (max-device-width : 768px) {
     html{
@@ -64,23 +55,22 @@ li{
     h2{
         font-size: 20px;
     }
-    .nav a {
+    nav a {
         padding: 13px;
         font-size: 13px;
     }
     
   }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
-    html{
-      font-size: 16px;
+    nav a {
+        padding: 15px;
     }
-    
   }
   @media only screen and (min-device-width : 1450px) {
     html{
         font-size: 18px;
       }
-      .nav a {
+    nav a {
         padding: 17px;
     }
     

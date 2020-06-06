@@ -3,8 +3,7 @@
     background: linear-gradient( #397D54, #47A06B, #65CB8E, white);
 }
 .contenedor{
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 0 8%;
     background-color:#E6F7EC;
     display: flex;
     flex-direction: column;
@@ -13,14 +12,13 @@
 .titulo{
     text-align: center;
     padding: 1.875rem;
-    font-size: 55px;
+    font-size: 3.4375rem;
     font-family: 'Marck Script', cursive;
 }
 .productos{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -33,7 +31,7 @@
 
 }
 .texto > ul > li{
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: right;
 }
 .texto{
@@ -44,7 +42,7 @@
     padding: 0.625rem;
     font-family: 'Trocchi', serif;
 }
-ul{
+.texto ul{
     padding: 0;
     list-style: none;
     text-align: center;
@@ -87,7 +85,7 @@ ul{
     line-height: 2.5rem;
     transition: all 1.5s ease;
     font-family: 'Merienda', cursive;
-    font-size: 20px;
+    font-size: 1.25rem;
     z-index: 2;
     margin-top: 20%;
 }
@@ -105,7 +103,7 @@ ul{
     background: url(../images/otros.jpg)  no-repeat center center/cover;
 }
 
-@media only screen and (min-device-width : 360px) and (max-device-width : 812px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 768px) {
     html{
         font-size: 14px;
     }
@@ -115,18 +113,17 @@ ul{
     }
     .texto > ul > li{
         font-size: 15px;
-        text-align: right;
     }
     .caja:hover > .foto {
         filter: grayscale(0);
-        transform: translateX(calc(-70px - 12px));
-      }
+        transform: translateX(-70px); 
+    }
     .caja:hover > .texto {
         transform: translateX(calc(70px - 12px));
       }
       .caja{
-        height: calc(120px + 32px);
-        width: calc(410px + 16px);
+        height: 152px; 
+        width: 426px;
     }
     .titulo{
         font-size: 40px;
@@ -134,10 +131,7 @@ ul{
     .tipo{
         font-size: 15px;
     }
-    .foto{
-        margin-left: 13px;
-    
-    }
+   
     
   }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
@@ -147,9 +141,16 @@ ul{
     .tipo{
         margin-top: 25%;
     }
+    .caja:hover > .foto {
+        filter: grayscale(0);
+        transform: translateX(-85px);
+    }
+    .caja:hover > .texto {
+        transform: translateX(70px);
+    }
     .caja{
-        height: calc(230px + 43px);
-        width: calc(390px + 23px);
+        height: 273px ;
+        width: 440px ;
     }
     .caja > div{
         height: 220px;
@@ -169,7 +170,7 @@ ul{
         width: 280px;
     }
     .caja{
-        height: calc(295px + 43px);
-        width: calc(590px + 23px);
+        height:338px;
+        width: 613px
     }
   }

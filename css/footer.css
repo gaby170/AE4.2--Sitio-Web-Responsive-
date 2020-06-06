@@ -1,33 +1,28 @@
-*{
-    margin: 0;
-}
+
 footer{
-    display: inline-flex;
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 2.8125rem;
-    width: 100%;
     background-color:#397D54 ;
 }
 
 footer > div{
     color: white;
     font-family: 'Merienda', cursive;
-    margin: 0.9375rem;
+    margin: 0.5rem;
     
 
 }
-@media only screen and (min-device-width : 360px) and (max-device-width : 812px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 768px) {
     .footer > div{
         margin-left: 4px;
         font-size: 9px;
     }
   }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
-    html{
-      font-size: 16px;
-    }
+    
     .footer > div{
         font-size: 12px;
     }
