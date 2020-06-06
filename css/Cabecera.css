@@ -1,10 +1,7 @@
 *{
     margin: 0;
 }
-html{
-    height: 100%;
-    width: 100%;
-}
+
 h2{
     color: white;
     font-size: 25px;
@@ -79,3 +76,13 @@ li{
     }
     
   }
+  @media only screen and (min-device-width : 1450px) {
+    html{
+        font-size: 18px;
+      }
+      .nav a {
+        padding: 17px;
+    }
+    
+  }
+ 

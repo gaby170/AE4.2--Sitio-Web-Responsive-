@@ -1,7 +1,7 @@
 *{
     margin: 0;
 }
-.footer{
+footer{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,7 +11,7 @@
     background-color:#397D54 ;
 }
 
-.footer > div{
+footer > div{
     color: white;
     font-family: 'Merienda', cursive;
     margin: 0.9375rem;
@@ -33,3 +33,8 @@
     }
     
   }
+  @media only screen and (min-device-width : 1450px) {
+    html{
+        font-size: 18px;
+      }
+    }
