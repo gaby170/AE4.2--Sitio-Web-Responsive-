@@ -59,6 +59,7 @@ fieldset{
     font-family: 'Trocchi', serif;
 }
 h3{
+    margin-top: 15px;
     font-family: 'Merienda', cursive;  
 }
 .redes{
@@ -253,4 +254,18 @@ label{
         font-size: 20px;
     }
     
+    
+  }
+  @media only screen and (min-device-width : 1450px) {
+    html{
+        font-size: 18px;
+      }
+    .main-content{
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+    h3{
+        font-size: 20px;
+        margin-top: 15px;
+    }
   }

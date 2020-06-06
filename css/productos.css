@@ -157,3 +157,19 @@ ul{
     }
     
   }
+  @media only screen and (min-device-width : 1450px) {
+    html{
+        font-size: 18px;
+      }
+      .titulo{
+        font-size: 70px;
+      }
+      .caja > div{
+        height: 280px;
+        width: 280px;
+    }
+    .caja{
+        height: calc(295px + 43px);
+        width: calc(590px + 23px);
+    }
+  }
