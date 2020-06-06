@@ -1,10 +1,6 @@
-*{
-    margin: 0;
-}
 .contenedor{
     height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5%;
     background-color: #374d65;
     box-shadow: 0px 10px 10px 9px gray;
 }
@@ -36,12 +32,10 @@
 .imagenes{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     padding: 30px;
 }
 .rotan{
-    width: 100%;
     height: 100%;
     position: relative;
     transition: transform 1s;
@@ -55,8 +49,8 @@
   }
   
   .imagen{
-    width: 300px;
-    height: 200px;
+    width: 18.75rem;
+    height: 12.5rem;
     perspective: 37.5rem;
     margin-right: 1.875rem;
   }
@@ -80,7 +74,7 @@
     backface-visibility: hidden;
   }
 
-  @media only screen and (min-device-width : 360px) and (max-device-width : 812px) {
+  @media only screen and (min-device-width : 360px) and (max-device-width : 768px) {
     html{
       font-size: 14px;
     }
@@ -91,7 +85,7 @@
       height: 160px;
     }
     .imagenes{
-      display: flex;
+      align-items: center;
       flex-direction: column;
   }
    .imagenes > div{

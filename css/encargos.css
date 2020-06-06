@@ -1,10 +1,7 @@
 
 .main-content{
     background: #C2F9D5;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 8% ;
-    padding-left: 8%;
+    padding: 2% 8%;
 }
 .contenedor{
     background-color: #4abe78;
@@ -12,36 +9,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: -10px 10px 30px black;
-    align-items: flex-start;
 }
 
-fieldset{
-    border: 0;
-    padding: 0;
-}
 .gradiente{
     width: 100%;
-    align-self: start;
     height: 1.25rem;
     background:  linear-gradient(90deg, rgba(57,125,84,1) 0%, rgba(91,194,132,1) 10%, rgba(36,88,57,1) 25%, rgba(89,199,133,1) 40%,
     rgba(51,106,73,1) 55%, rgba(74,190,120,1) 70%, rgba(34,113,65,1) 85%, rgba(127,244,173,1) 100%);
     z-index: 1;
 }
 .encargo{
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width:100%;
+
 }
+
+form { 
+    width: 100%; 
+}
+
 .nube{
-    background: rgb(127,244,173);
     background: linear-gradient(225deg, rgba(127,244,173,1) 0%, rgba(34,113,65,1) 51%);
     overflow: hidden;
-    padding: 0px;
     width: 14.375rem;
     height: 9.375rem;
-    float: left;
     border-radius: 50px 0px 50px 0px; 
     -moz-border-radius: 35px 0px 35px 0px; 
     -webkit-border-radius: 50px 0px 50px 0px; 
-    
     box-shadow: -4px 3px 5px #227141;
 }
 .duda{
@@ -54,123 +50,84 @@ fieldset{
     margin-top: 0.3125rem;
 }
 .duda > .texto{
-
-
     font-family: 'Trocchi', serif;
 }
 h3{
-    margin-top: 15px;
     font-family: 'Merienda', cursive;  
 }
 .redes{
     display: flex;
 }
-
 .redes > div{
     margin-left: 0.625rem;
 }
 i{
-    float: left;
     margin-top: 0.625rem;
     font-family: none;
     color: black;
-    width: 100%;
     font-size: 30px;
 }
 i:hover{
-    
     font-size: 35px;
 }
 
-
-#arreglosFlores{
-    display: none;
-}
-#floresPlantas{
-    display: none;
-}
-#otros{
+#arreglosFlores, #floresPlantas, #otros{
     display: none;
 }
 
-#radio1:checked ~ #arreglosFlores {
+#checkbox1:checked ~ #arreglosFlores, #checkbox2:checked ~ #floresPlantas, 
+#checkbox3:checked ~ #otros  {
     display: block;
-}
-  
-#radio2:checked ~ #floresPlantas {
-    display: block;
-}
-  
-#radio3:checked ~ #otros {
-    display: block;
-}
-#radio3:checked ~ .contenedor {
-    height: 0;
 }
 
 h1{
-    font-size: 60px;
+    font-size: 60px; 
     text-align: center;
-    margin-left: 4%;
+    margin-left: 20%;
     margin-top: 5%;
     font-family: 'Marck Script', cursive;
 }
 .rellenar > div{
-    margin-top: 2.8125rem;
+    margin-top:1.5rem;
     margin-left: 5%;
-    
 }
-.n > input{
-    margin-left: 0.625rem;
+
+.caja { 
     width: 21.875rem;
     height: 1.5625rem;
     border: 0;
-    margin-top: 0.625rem;
 }
-.c > input{
+
+.nombre_formulario > input{
+    margin-left: 5.8rem;
+}
+.correo > input{
     margin-left: 0.625rem;
-    width: 21.875rem;
-    height: 1.5625rem;
-    border: 0;
-    
-    margin-top: 0.625rem;
 }
-.s > p{
-    font-size: 25px;
+.selector > p{
+    font-size: 25px; 
 }
 .botones{
     margin: 1.25rem;
+    text-align: center;
 }
-.s>input{
+.selector>input{
     margin-top: 0.625rem;
 }
 
-.s > div{
-    border-top: 1.25rem rgb(74,190,120); solid;
-    text-align: center;
-    margin-top: 0.625rem;
-    width: 100%;
+.selector > div{
+   text-align: center;
+    margin-top: 1.25rem; 
+    width: 90%;
     background: linear-gradient(90deg, rgba(74,190,120,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 73%, rgba(74,190,120,1) 100%);
     padding: 1.25rem;
 }
-#arreglosFlores > div{
+#arreglosFlores > div, #floresPlantas > div, #otros > div, .mensaje > p { /* TODO EN UNA lÍNEA */
     margin-top: 0.9375rem;
 }
-#floresPlantas > div{
-    margin-top: 0.9375rem;
-}
-#otros > div{
-    margin-top: 0.9375rem;
-}
-.m > p{
-    margin-top: 0.9375rem;
 
-}
-.botones{
-    text-align: center;
-}
 .botones > input{
-    font-size: 15px;
+    font-size: 15px; 
     border: 0;
     width: 5rem;
     height: 2.5rem;
@@ -180,43 +137,35 @@ h1{
     margin: 8px;
 }
 .botones > input:hover{
-    border-radius: 50%;
     background: #397D54;
 
 
 }
-.s > div > .m > label{
+.selector > div > .mensaje > label{
     vertical-align: top;
-
 }
 label{
     font-family: 'Trocchi', serif;
 }
-@media only screen and (min-device-width : 360px) and (max-device-width : 812px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : /*812*/767px) {
     html{
       font-size: 14px;
     }
-    .n > input{
-        margin-left: 0px;
+
+    .main-content { 
+        min-height: calc(100vh - 7.03rem);
+    }
+
+    .caja {
         width: 260px;
         height: 20px;
-        border: 0;
     }
-    .c > input{
-        margin-left: 0px;
-        width: 260px;
-        height: 20px;
-        border: 0;
-    }
-    .encargo{
-        width: 40%;
-    }
+
+  
     h1{
-        font-size: 40px;
-        margin-left: 8%;
-        margin-top: 5%;
-        text-align: start;
-        font-family: 'Marck Script', cursive;
+        font-size: 30px;
+        padding-top: 25px;
+        margin-left: 5%;
     }
     
     .nube{
@@ -233,12 +182,31 @@ label{
     i{
         font-size: 17px;
     }
-    
-  }
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
-    html{
-      font-size: 16px;
+    i:hover{ 
+        font-size: 19px;
     }
+
+    .nombre_formulario > input, .correo > input{
+        margin-left: 0;
+        margin-top: .25rem;
+    }
+
+    .selector > div{ 
+        width: 85%;
+        margin-top: 0.95rem;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1030px) {
+   
+    .main-content { 
+        min-height: calc(100vh - 8.1rem);
+    }
+
+    h1{ 
+        font-size: 44px;
+        padding-top: 20px;
+    }
+
     .nube{
         font-size: 10px;
         width: 160px;
@@ -247,15 +215,14 @@ label{
         -moz-border-radius: 80px 0px 80px 0px; 
         -webkit-border-radius: 60px 0px 60px 0px; 
     }
+
     .redes > div{
         margin-left: 5px;
     }
     i{
         font-size: 20px;
     }
-    
-    
-  }
+}
   @media only screen and (min-device-width : 1450px) {
     html{
         font-size: 18px;

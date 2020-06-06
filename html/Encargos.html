@@ -12,11 +12,10 @@
 </head>
 <body>
     <header>
-        <div class="cabecera">
             <div class="nombre">
                 <h2>Laurisilva</h2>
             </div>
-            <nav class="nav">
+            <nav>
                 <ul>
                     <li><a href="#">MENU</a>
                         <ul>
@@ -28,148 +27,16 @@
                     </li>
                 </ul>
             </nav>
-        </div>
     </header>
     <div class="main-content">
         <div class="contenedor">
             <div class="gradiente"></div>
             <div class="encargo">
-                    <form action="http://www.apuntes.es/maneja_formulario.php" method="post">
-                        <div class="formulario">
-                            <h1>Encargos</h1>
-                            <fieldset>
-                                <div class="rellenar">
-                                    <div class="n">
-                                        <label for="nombre">Nombre:</label> 
-                                        <input class="caja" type="text" name="nombre" value="" placeholder="Introduce tu nombre..." />
-                                    </div>
-                                    <div class="c">
-                                        <label for="correo">Correo electronico:</label>
-                                        <input class="caja" type="text" name="correo" value="" placeholder="Introduce tu correo..." />
-                                    </div>
-                                    <div class="s">
-                                        <p>Selecciona el producto:</p>
-                                        <input type="checkbox" id="radio1" name="arreglosFlores" value="radio1">
-                                        <label for="radio1">Arreglos Florales</label>
-                                        <br/>
-                                        <input type="checkbox" id="radio2" name="floresPlantas" value="radio2">
-                                        <label for="radio2">Flores o Plantas</label>
-                                        <br/>
-                                        <input type="checkbox" id="radio3" name="otros" value="radio3">
-                                        <label for="radio3">Otros </label>
-                                        <div id="arreglosFlores">
-                                                    <h3>Arreglos Florales</h3>
-                                                    <div>Evento:
-                                                        <select class="elegir" name="evento">
-                                                            <option>Funeral</option>
-                                                            <option selected>Bodas</option>
-                                                            <option>Felicitaciones</option>
-                                                            <option>Comuniones</option>
-                                                            <option>Nacimientos</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="d">
-                                                        <label for="direccion">Dirección:</label>
-                                                        <input class="caja" type="direccion" name="direccion" value="" placeholder="Introduce dirección..." />
-                                                    </div>
-                                                    <div class="d">
-                                                        <label for="start">Fecha: </label>
-                                                        <input type="date" id="start" name="trip-start" value="2018-07-22"min="2020-01-01" max="2050-12-31">
-                                                    </div>
-                                                    <div class="h">
-                                                        <label for="time">Hora de la entrega:</label>
-                                                        <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
-                                                    </div>
-                                                    <div class="m">
-                                                        <label for="mensaje">Otros datos:</label>
-                                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
-                                                    </div>
-                                        </div>
-                                        <div id="floresPlantas">
-                                                    <h3>Flores o Plantas</h3>
-                                                    <div>Flor:
-                                                        <select class="elegir" name="evento">
-                                                            <option value="1" label="Orquideas">
-                                                            <option value="2" label="Gerberas">
-                                                            <option value="3" label="Margaritas">
-                                                            <option value="4" label="Claveles">
-                                                            <option value="5" label="Lirios">
-                                                            <option value="6" label="Rosas">
-                                                            <option value="7" label="Anthurium">
-                                                            <option value="8" label="Lisianthus">
-                                                        </select>
-                                                        <select name="cantidad">
-                                                            <option selected>0</option>
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                    <div>Planta:
-                                                        <select class="elegir" name="evento">
-                                                            <option value="1" label="Orquideas">
-                                                            <option value="3" label="Margaritas">
-                                                            <option value="4" label="Claveles">
-                                                            <option value="5" label="Lirios">
-                                                            <option value="6" label="Rosas">
-                                                        </select>
-                                                        <select name="cantidad">
-                                                            <option selected>0</option>
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="m">
-                                                        <label for="mensaje">Frase o dedicatoria</label>
-                                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="1" placeholder="Introduce un mensaje..." ></textarea>
-                                                    </div>
-                                                    <div> Anonimo :
-                                                        <input type="radio" name="transporte" value="1">Si
-                                                        <input type="radio" name="transporte" value="2">No
-                                                    </div>
-                                                    <div class="d">
-                                                        <label for="direcccion">Dirección:</label>
-                                                        <input class="caja" type="direccion" name="apellido" value="" placeholder="Introduce dirección..." />
-                                                    </div>
-                                                    <div class="d">
-                                                        <label for="start">Fecha: </label>
-                                                        <input type="date" id="start" name="trip-start" value="2018-07-22"min="2020-01-01" max="2050-12-31">
-                                                    </div>
-                                                    <div class="h">
-                                                        <label for="time">Hora de la entrega:</label>
-                                                        <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
-                                                    </div>
-                                                    <div class="m">
-                                                        <label for="mensaje">Otros datos:</label>
-                                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
-                                                    </div>
-                                        </div>
-                                        <div id="otros">
-                                                    <h3>Otros</h3>
-                                                    <div class="m">
-                                                        <label for="mensaje">Describa el producto:</label>
-                                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Descripción..." ></textarea>
-                                                        <p>O si prefiere contacte con nosotros..</p>
-                                                    </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="botones">
-                                            <input type="reset" name="limpiar" value="Limpiar" /> 
-                                            <input type="submit" name="enciar" value="Enviar" />
-                                </div>
-                            </fieldset>
-                        </div> 
-                    </form>
-            </div>
-            <div class="nube">
+                <h1>Encargos</h1>
+                <div class="nube">
                     <div class="duda">
-                        <h3>Contacta con nosotros</h3>
+                        <h3>¿Tienes dudas?</h3>
+                        <div class="texto">Contacta con nosotros</div>
                         <div class="telefono">6323943563</div>
                         <div class="redes">
                             <div><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></div>
@@ -177,14 +44,142 @@
                             <div><a href="https://www.youtube.com/farraworld"><i class="fab fa-youtube-square"></i></a></div>
                         </div>
                     </div>
+                </div>
+                <form action="http://www.apuntes.es/maneja_formulario.php" method="post">
+                        <div class="rellenar">
+                            <div class="nombre_formulario">
+                                <label for="nombre_formulario">Nombre:</label> 
+                                <input class="caja" type="text" name="nombre" value="" placeholder="Introduce tu nombre..." />
+                            </div>
+                            <div class="correo">
+                                <label for="correo">Correo electronico:</label>
+                                <input class="caja" type="text" name="correo" value="" placeholder="Introduce tu correo..." />
+                            </div>
+                            <div class="selector">
+                                <p>Selecciona el producto:</p>
+                                <input type="checkbox" id="checkbox1" name="arreglosFlores" value="checkbox1">
+                                <label for="checkbox1">Arreglos Florales</label>
+                                <br/>
+                                <input type="checkbox" id="checkbox2" name="floresPlantas" value="checkbox2">
+                                <label for="checkbox2">Flores o Plantas</label>
+                                <br/>
+                                <input type="checkbox" id="checkbox3" name="otros" value="checkbox3">
+                                <label for="checkbox3">Otros </label>
+                                <div id="arreglosFlores">
+                                    <h3>Arreglos Florales</h3>
+                                    <div>Evento:
+                                        <select class="elegir" name="evento">
+                                            <option>Funeral</option>
+                                            <option selected>Bodas</option>
+                                            <option>Felicitaciones</option>
+                                            <option>Comuniones</option>
+                                            <option>Nacimientos</option>
+                                        </select>
+                                    </div>
+                                    <div class="direccion">
+                                        <label for="direccion">Dirección:</label>
+                                        <input class="caja" type="direccion" name="direccion" value="" placeholder="Introduce dirección..." />
+                                    </div>
+                                    <div class="dia">
+                                        <label for="start">Fecha: </label>
+                                        <input type="date" id="start" name="trip-start" value="2018-07-22"min="2020-01-01" max="2050-12-31">
+                                    </div>
+                                    <div class="hora">
+                                        <label for="time">Hora de la entrega:</label>
+                                        <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
+                                    </div>
+                                    <div class="mensaje">
+                                        <label for="mensaje">Otros datos:</label>
+                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
+                                    </div>
+                                </div>
+                                <div id="floresPlantas">
+                                    <h3>Flores o Plantas</h3>
+                                    <div>Flor:
+                                        <select class="elegir" name="evento">
+                                            <option value="1" label="Orquideas">
+                                            <option value="2" label="Gerberas">
+                                            <option value="3" label="Margaritas">
+                                            <option value="4" label="Claveles">
+                                            <option value="5" label="Lirios">
+                                            <option value="6" label="Rosas">
+                                            <option value="7" label="Anthurium">
+                                            <option value="8" label="Lisianthus">
+                                        </select>
+                                        <select name="cantidad">
+                                            <option selected>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div>Planta:
+                                        <select class="elegir" name="evento">
+                                            <option value="1" label="Orquideas">
+                                            <option value="3" label="Margaritas">
+                                            <option value="4" label="Claveles">
+                                            <option value="5" label="Lirios">
+                                            <option value="6" label="Rosas">
+                                        </select>
+                                        <select name="cantidad">
+                                            <option selected>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="mensaje">
+                                        <label for="mensaje">Frase o dedicatoria</label>
+                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="1" placeholder="Introduce un mensaje..." ></textarea>
+                                    </div>
+                                    <div> Anonimo :
+                                        <input type="radio" name="transporte" value="1">Si
+                                        <input type="radio" name="transporte" value="2">No
+                                    </div>
+                                    <div class="direccion"> 
+                                        <label for="direcccion">Dirección:</label>
+                                        <input class="caja" type="direccion" name="apellido" value="" placeholder="Introduce dirección..." />
+                                    </div>
+                                    <div class="dia"> 
+                                        <label for="start">Fecha: </label>
+                                        <input type="date" id="start" name="trip-start" value="2018-07-22"min="2020-01-01" max="2050-12-31">
+                                    </div>
+                                    <div class="hora"> 
+                                        <label for="time">Hora de la entrega:</label>
+                                        <input type="time" name="hora" value="00:00:00" max="00:00:00" min="01:00:00" step="6">
+                                    </div>
+                                    <div class="mensaje">
+                                        <label for="mensaje">Otros datos:</label>
+                                        <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Otros datos..." ></textarea>
+                                    </div>
+                                </div>
+                                <div id="otros">
+                                            <h3>Otros</h3>
+                                            <div class="mensaje"> 
+                                                <label for="mensaje">Describa el producto:</label>
+                                                <textarea class="elegir" name="mensaje" id="" cols="30" rows="5" placeholder="Descripción..." ></textarea>
+                                                <p>O si prefiere contacte con nosotros..</p>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botones">
+                                    <input type="reset" name="limpiar" value="Limpiar" /> 
+                                    <input type="submit" name="enciar" value="Enviar" />
+                        </div>
+                </form>
             </div>
+            
         </div>
     </div>
     <footer>
         <div class="direccion">Santa Catalina - Hermigua</div>
         <div class="numero">6323943563</div>
         <div class="correo">floristeriaLaurisilva@gmail.com</div>
-    </footer>
-    
+    </footer> 
 </body>
 </html>
